@@ -11,12 +11,14 @@
 
 #VSLIDE
 ### DOCS: Domain-Aware Crowdsourcing System
-[Click to download paper](http://www.vldb.org/pvldb/vol10/p361-zheng.pdf)
+
 
 #VSLIDE
 #### Effective Indexing for Approximate Constrained Shortest Path Queries on Large Road Networks
-[Click to download paper](http://www.vldb.org/pvldb/vol10/p61-wang.pdf)
 
-#HSLIDE
+
+#VSLIDE
+[DOCS: Domain-Aware Crowdsourcing System - .pdf](http://www.vldb.org/pvldb/vol10/p361-zheng.pdf)
+[Effective Indexing for Approximate Constrained Shortest Path Queries on Large Road Networks - .pdf](http://www.vldb.org/pvldb/vol10/p61-wang.pdf)
 
 #HSLIDE
