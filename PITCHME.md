@@ -53,8 +53,8 @@ Find path between two nodes that:
 ## CSP is NP-HARD
 
 #VSLIDE
-## Approximate CSP
-existing methods are still prohibitively expensive on **large Roads Network** (RN).
+## Approximate CSP (α-CSP)
+existing methods are still **prohibitively expensive** on **large Roads Network** (RN).
 
 #VSLIDE
 fail to utilize the **special properties of road networks**
@@ -103,8 +103,15 @@ previous solutions by **more than an order of magnitude**.
 # Why ?
 
 #VSLIDE
+## How to deal with multiple criteria on SP ?
+
+#VSLIDE
 ![results](gmap.jpg)
 <br>
+
+#VSLIDE
+## Show multiple path, let the user choose
+(Not so efficient)
 
 #VSLIDE
 ![results](toll1.jpg)
@@ -123,8 +130,24 @@ previous solutions by **more than an order of magnitude**.
 <br>
 
 #VSLIDE
+![idea](idea.jpg)
+<br>
+Use **CSP to efficiently solve two-criteria** SP. (still **challenging**)
+
+#VSLIDE
 ![results](rail.jpg)
 <br>
+Railroads applications
+
+#VSLIDE
+![results](tank.jpg)
+<br>
+Military applications
+
+#HSLIDE
+# State of art
+
+
 
 #HSLIDE
 # How ?
