@@ -44,6 +44,8 @@
 #VSLIDE
 ## CSP query
 [**C**onstrainted **S**hortest **P**ath]
+
+
 Find path between two nodes that:
 - satify a constraint on cost
 - minimize length of path
