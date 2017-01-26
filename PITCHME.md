@@ -41,6 +41,22 @@
 #HSLIDE
 # What ?
 
+#VSLIDE
+## CSP query
+[**C**onstrainted **S**hortest **P**ath]
+Find path between two nodes that:
+- satify a constraint on cost
+- minimize length of path
+
+#VSLIDE
+## CSP is NP-HARD
+
+#VSLIDE
+## Approximate CSP
+is still slow on **large Roads Network** (RN).
+
+#VSLIDE
+## COLA
 
 #HSLIDE
 # When ?
