@@ -43,12 +43,11 @@
 
 #VSLIDE
 ## CSP query
-[**C**onstrainted **S**hortest **P**ath]
-
+[**C**onstrainted **S**hortest **P**ath]<br>
 
 Find path between two nodes that:
-- satify a constraint on cost
-- minimize length of path
+- satify a **constraint on cost**
+- **minimize length** of path
 
 #VSLIDE
 ## CSP is NP-HARD
@@ -59,6 +58,7 @@ is still slow on **large Roads Network** (RN).
 
 #VSLIDE
 ## COLA
+the **first practical solution** for approximate CSP processing on **large road networks**
 
 #HSLIDE
 # When ?
