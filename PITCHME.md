@@ -89,7 +89,15 @@ on-the-fly algorithm called **α-Dijk for path computation within a partition**,
 
 
 #VSLIDE
-## CSP is NP-HARD
+![results](fantozzi.jpg)
+<br>
+On **continent-sized road networks**, COLA answers an approximate CSP query in sub-second time, existing methods can take hours.
+
+#VSLIDE
+![results](fantozzi.jpg)
+<br>
+**Without an index**, the **α-Dijk algorithm** in COLA still **outperforms**
+previous solutions by **more than an order of magnitude**.
 
 #HSLIDE
 # Why ?
