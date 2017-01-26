@@ -132,12 +132,14 @@ previous solutions by **more than an order of magnitude**.
 #VSLIDE
 ![idea](idea.jpg)
 <br>
-Use **CSP to efficiently solve two-criteria** SP. (still **challenging**)
+Use **CSP to efficiently solve two-criteria** SP. <br>
+(still **challenging**)
 
 #VSLIDE
-![results](rail.jpg)
-<br>
 Railroads applications
+<br>
+![results](rail.jpg)
+
 
 #VSLIDE
 ![results](tank.jpg)
