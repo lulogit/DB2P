@@ -150,12 +150,12 @@ Military applications
 # State of art
 
 #VSLIDE
-![results](wrong.jpg)
+![results](wrong.png)
 ### Aim to solve general 	&Alpha;-CSP
 (no exploitation of graph properties)
 
 #VSLIDE
-![results](wrong.jpg)
+![results](wrong.png)
 ### None or poor use of indexing
 (Few existing indexes are **thought for exact CSP**, thus **memory intensive** without any practical result)
 
