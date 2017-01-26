@@ -64,7 +64,16 @@ existing methods are still prohibitively expensive on **large Roads Network** (R
 the **first practical solution** for approximate CSP processing on **large road networks**
 
 #VSLIDE
-##
+![idea](idea.jpg)
+exploits the facts that a **road network can be effectively partitioned**,
+and that there exists a **relatively small set of landmark vertices**
+that commonly **appear in CSP results**
+
+#VSLIDE
+![idea](idea.jpg)
+Accordingly **indexes the vertices** lying on **partition boundaries**, and applies an
+on-the-fly algorithm called **α-Dijk for path computation within a partition**, which **effectively prunes paths** based on landmarks
+
 
 #VSLIDE
 ## CSP is NP-HARD
