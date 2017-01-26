@@ -102,6 +102,31 @@ previous solutions by **more than an order of magnitude**.
 #HSLIDE
 # Why ?
 
+#VSLIDE
+![results](gmap.jpg)
+<br>
+
+#VSLIDE
+![results](toll1.jpg)
+<br>
+
+#VSLIDE
+![results](toll2.jpg)
+<br>
+
+#VSLIDE
+![results](toll3.jpg)
+<br>
+
+#VSLIDE
+![results](ny_left.jpg)
+<br>
+
+#VSLIDE
+![results](rail.jpg)
+<br>
+![results](us_rail.jpg)
+
 #HSLIDE
 # How ?
 ### (Quo modo ?)
