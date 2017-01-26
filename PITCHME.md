@@ -125,7 +125,6 @@ previous solutions by **more than an order of magnitude**.
 #VSLIDE
 ![results](rail.jpg)
 <br>
-![results](us_rail.jpg)
 
 #HSLIDE
 # How ?
