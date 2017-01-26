@@ -68,13 +68,23 @@ the **first practical solution** for approximate CSP processing on **large road 
 
 #VSLIDE
 ![idea](idea.jpg)
-exploits the facts that a **road network can be effectively partitioned**,
-and that there exists a **relatively small set of landmark vertices**
+<br>
+ **road network can be effectively partitioned**
+
+#VSLIDE
+![idea](idea.jpg)
+<br>
+there exists a **relatively small set of landmark vertices**
 that commonly **appear in CSP results**
 
 #VSLIDE
 ![idea](idea.jpg)
-Accordingly **indexes the vertices** lying on **partition boundaries**, and applies an
+<br>
+Accordingly **indexes the vertices** lying on **partition boundaries**
+
+#VSLIDE
+![idea](idea.jpg)
+<br>
 on-the-fly algorithm called **α-Dijk for path computation within a partition**, which **effectively prunes paths** based on landmarks
 
 
