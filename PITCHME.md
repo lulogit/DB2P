@@ -54,11 +54,19 @@ Find path between two nodes that:
 
 #VSLIDE
 ## Approximate CSP
-is still slow on **large Roads Network** (RN).
+existing methods are still prohibitively expensive on **large Roads Network** (RN).
+- fail to utilize the special properties of road networks
+- process queries without indices / few existing indices consume large amounts of memory in comparison to the limited benefit
 
 #VSLIDE
 ## COLA
 the **first practical solution** for approximate CSP processing on **large road networks**
+
+#VSLIDE
+##
+
+#VSLIDE
+## CSP is NP-HARD
 
 #HSLIDE
 # When ?
