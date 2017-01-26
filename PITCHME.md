@@ -56,8 +56,11 @@ Find path between two nodes that:
 ## Approximate CSP
 existing methods are still prohibitively expensive on **large Roads Network** (RN).
 
-- fail to utilize the special properties of road networks
-- process queries without indices / few existing indices consume large amounts of memory in comparison to the limited benefit
+#VSLIDE
+fail to utilize the **special properties of road networks**
+
+#VSLIDE
+process queries **without indices** / few existing indices consume **large amounts of memory** in comparison to the limited benefit
 
 #VSLIDE
 ## COLA
@@ -77,11 +80,6 @@ on-the-fly algorithm called **α-Dijk for path computation within a partition**,
 
 #VSLIDE
 ## CSP is NP-HARD
-
-#HSLIDE
-# When ?
-#VSLIDE
-### Presented at VLDB 2016
 
 #HSLIDE
 # Why ?
