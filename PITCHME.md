@@ -53,7 +53,7 @@ Find path between two nodes that:
 ## CSP is NP-HARD
 
 #VSLIDE
-## Approximate CSP (α-CSP)
+## Approximate CSP (&Alpha;-CSP)
 existing methods are still **prohibitively expensive** on **large Roads Network** (RN).
 
 #VSLIDE
@@ -149,6 +149,15 @@ Military applications
 #HSLIDE
 # State of art
 
+#VSLIDE
+![results](wrong.jpg)
+### Aim to solve general 	&Alpha;-CSP
+(no exploitation of graph properties)
+
+#VSLIDE
+![results](wrong.jpg)
+### None or poor use of indexing
+(Few existing indexes are **thought for exact CSP**, thus **memory intensive** without any practical result)
 
 
 #HSLIDE
