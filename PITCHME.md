@@ -212,6 +212,11 @@ adding only a set of selected shortcuts, keeping the vertex
 ### &alpha;-CSP without indexing
 **No known literature** about this solution
 
+#VSLIDE
+### Other approaches (no state of art)
+- ILP problem formulation <br>(not scalable on large problems)
+- k-shortest problem (outperformed by Sky-Dijk)
+
 #HSLIDE
 # How ?
 ### (Quo modo ?)
