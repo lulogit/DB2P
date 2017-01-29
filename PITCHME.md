@@ -228,6 +228,23 @@ adding only a set of selected shortcuts, keeping the vertex
 - Query processing (exploiting index)
 - Various optimizations
 
+#VSLIDE
+#### Overlay graph
+Overlay graph **compresses the input graph** by:
+1. including only the boundary vertices of the partitions and removing all other vertices
+2. using edges to represent paths in G
+3. reducing the number of edges by removing paths that are &alpha;-dominated by others
+
+#VSLIDE
+![datasets](partition.png)
+
+#VSLIDE
+![idea](idea.jpg)
+<br>
+**q** query from **s** to **t**<br>
+G(q) = G(s) U G(t) U G(o)<br>
+speed up the computation
+
 #HSLIDE
 # How much ?
 
