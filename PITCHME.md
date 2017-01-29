@@ -53,7 +53,7 @@ Find path between two nodes that:
 ## CSP is NP-HARD
 
 #VSLIDE
-## Approximate CSP (&Alpha;-CSP)
+## Approximate CSP (&alpha;-CSP)
 existing methods are still **prohibitively expensive** on **large Roads Network** (RN).
 
 #VSLIDE
@@ -90,7 +90,7 @@ Accordingly **indexes the vertices** lying on **partition boundaries**
 #VSLIDE
 ![idea](idea.jpg)
 <br>
-on-the-fly algorithm called **&Alpha;-Dijk for path computation within a partition**, which **effectively prunes paths** based on landmarks
+on-the-fly algorithm called **&alpha;-Dijk for path computation within a partition**, which **effectively prunes paths** based on landmarks
 
 
 #VSLIDE
@@ -101,7 +101,7 @@ On **continent-sized road networks**, COLA answers an approximate CSP query in s
 #VSLIDE
 ![results](fantozzi.jpg)
 <br>
-**Without an index**, the **&Alpha;-Dijk algorithm** in COLA still **outperforms**
+**Without an index**, the **&alpha;-Dijk algorithm** in COLA still **outperforms**
 previous solutions by **more than an order of magnitude**.
 
 #HSLIDE
@@ -156,7 +156,7 @@ Military applications
 
 #VSLIDE
 ![results](wrong.png)
-### Aim to solve general 	&Alpha;-CSP
+### Aim to solve general 	&alpha;-CSP
 (no exploitation of graph properties)
 
 #VSLIDE
