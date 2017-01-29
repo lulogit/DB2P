@@ -164,6 +164,29 @@ Military applications
 ### None or poor use of indexing
 (Few existing indexes are **thought for exact CSP**, thus **memory intensive** without any practical result)
 
+#VSLIDE
+### Some concepts:
+
+- &alpha;-dominance
+- skyline
+
+#VSLIDE
+### Exact CSP without indexing
+**Sky-Dijk** stores shortest paths in heaps, for each node
+O(ℓmaxmn · log(ℓmaxn)) complexity
+
+#VSLIDE
+### &alpha;-CSP without indexing
+**CP-Dijk** is like Sky-Dijk, but removes √n(α)-dominated paths
+O(κmn · log(κn))
+κ = log(n · ℓmax/ℓmin)/(α − 1)
+
+#VSLIDE
+### Exact CSP with indexing
+**CSP-CH** 
+
+#VSLIDE
+### &alpha;-CSP without indexing
 
 #HSLIDE
 # How ?
