@@ -238,17 +238,17 @@ adding only a set of selected shortcuts, keeping the vertex
 ![datasets](datasets.png)
 
 #VSLIDE
-![datasets](perfomance1.png)
+![datasets](performance1.png)
 - also **&alpha;-Dijk without indexing outperforms state of the art**
 - the results **strictly depends on the distance** between **s** and **t** vertices
 
 #VSLIDE
-![datasets](perfomance2.png)
+![datasets](performance2.png)
 - cola index is **< 5GB** (affordable)
 - overlay network is **an order of magnitude less** than index
 
 #VSLIDE
-![datasets](perfomance3.png)
+![datasets](performance3.png)
 - cola takes 3x to 4x processing time
 - cola's pre-processing cost **< 12 hours** (affordable)
 
