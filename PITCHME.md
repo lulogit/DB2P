@@ -210,6 +210,7 @@ adding only a set of selected shortcuts, keeping the vertex
 
 #VSLIDE
 ### &alpha;-CSP without indexing
+**No known literature** about this solution
 
 #HSLIDE
 # How ?
