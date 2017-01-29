@@ -219,15 +219,8 @@ adding only a set of selected shortcuts, keeping the vertex
 
 #HSLIDE
 # How ?
-### (Quo modo ?)
 
-#HSLIDE
-# How ?
-### (Quibus auxiliis ?)
+
 
 #HSLIDE
 # How much ?
-#VSLIDE
-
-
-#HSLIDE
