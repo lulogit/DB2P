@@ -220,7 +220,39 @@ adding only a set of selected shortcuts, keeping the vertex
 #HSLIDE
 # How ?
 
-
+#VSLIDE
+### The COLA framework
+- Graph partitioning
+- Overlay graph
+- Index (on overlay graph)
+- Query processing (exploiting index)
+- Various optimizations
 
 #HSLIDE
 # How much ?
+
+#VSLIDE
+## Experimental results
+
+#VSLIDE
+![datasets](datasets.png)
+
+#VSLIDE
+![datasets](perfomance1.png)
+- also **&alpha;-Dijk without indexing outperforms state of the art**
+- the results **strictly depends on the distance** between **s** and **t** vertices
+
+#VSLIDE
+![datasets](perfomance2.png)
+- cola index is **< 5GB** (affordable)
+- overlay network is **an order of magnitude less** than index
+
+#VSLIDE
+![datasets](perfomance3.png)
+- cola takes 3x to 4x processing time
+- cola's pre-processing cost **< 12 hours** (affordable)
+
+#VSLIDE
+![datasets](alpha.png)
+- better results with &alpha; >> (prune more paths)
+- low sensitivity in query time to &alpha;
