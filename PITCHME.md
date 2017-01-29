@@ -173,18 +173,26 @@ Military applications
 #VSLIDE
 ### Exact CSP without indexing
 **Sky-Dijk** stores shortest paths in heaps, for each node
-O(ℓmaxmn · log(ℓmaxn)) complexity
+
+#VSLIDE
+### Complexity
+O(ℓmaxmn · log(ℓmaxn))
 
 #VSLIDE
 ### &alpha;-CSP without indexing
 **CP-Dijk** is like Sky-Dijk, but removes √n(α)-dominated paths
-O(κmn · log(κn))
+
+#VSLIDE
+### Complexity
+O(κmn · log(κn))<br>
 κ = log(n · ℓmax/ℓmin)/(α − 1)
 
 #VSLIDE
 ### Exact CSP with indexing
-**CSP-CH** accelerates Sky-Dijk with contraction
-hierarchies
+**CSP-CH** accelerates Sky-Dijk with contraction hierarchies
+
+#VSLIDE
+### Contraction hierarchy
 - In each iteration removes a vertex from the graph, and substitutes it with new shortcut edges for the remaining vertices
 - bidirectional Sky-Dijk search from both the origin s and the destination t simultaneously, utilizing the shortcuts to reduce the number of nodes to be traversed
 
