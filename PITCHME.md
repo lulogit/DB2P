@@ -70,6 +70,11 @@ the **first practical solution** for approximate CSP processing on **large road 
 ![idea](idea.jpg)
 <br>
  **road network can be effectively partitioned**
+ <br>
+ *COLA: Optimizing Stream Processing
+Applications via Graph Partitioning* (International Federation for Information Processing 2009)
+
+
 
 #VSLIDE
 ![idea](idea.jpg)
