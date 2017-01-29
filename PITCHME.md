@@ -85,7 +85,7 @@ Accordingly **indexes the vertices** lying on **partition boundaries**
 #VSLIDE
 ![idea](idea.jpg)
 <br>
-on-the-fly algorithm called **α-Dijk for path computation within a partition**, which **effectively prunes paths** based on landmarks
+on-the-fly algorithm called **&Alpha;-Dijk for path computation within a partition**, which **effectively prunes paths** based on landmarks
 
 
 #VSLIDE
@@ -96,7 +96,7 @@ On **continent-sized road networks**, COLA answers an approximate CSP query in s
 #VSLIDE
 ![results](fantozzi.jpg)
 <br>
-**Without an index**, the **α-Dijk algorithm** in COLA still **outperforms**
+**Without an index**, the **&Alpha;-Dijk algorithm** in COLA still **outperforms**
 previous solutions by **more than an order of magnitude**.
 
 #HSLIDE
