@@ -183,7 +183,22 @@ O(κmn · log(κn))
 
 #VSLIDE
 ### Exact CSP with indexing
-**CSP-CH** 
+**CSP-CH** accelerates Sky-Dijk with contraction
+hierarchies
+- In each iteration removes a vertex from the graph, and substitutes it with new shortcut edges for the remaining vertices
+- bidirectional Sky-Dijk search from both the origin s and the destination t simultaneously, utilizing the shortcuts to reduce the number of nodes to be traversed
+
+#VSLIDE
+### This index has a prohibitive space complexity
+**heuristics** to alleviate this problem:
+adding only a set of selected shortcuts, keeping the vertex
+<br>
+
+
+#VSLIDE
+![results](wrong.png)
+### Its query processing cost is still impractically high
+**compromises** dramatically **decrease the effectiveness of the index**
 
 #VSLIDE
 ### &alpha;-CSP without indexing
