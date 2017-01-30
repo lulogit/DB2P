@@ -239,11 +239,72 @@ Overlay graph **compresses the input graph** by:
 ![datasets](partition.png)
 
 #VSLIDE
+![idea](overlay.png)
+
+#VSLIDE
 ![idea](idea.jpg)
 <br>
 **q** query from **s** to **t**<br>
 G(q) = G(s) U G(t) U G(o)<br>
 speed up the computation
+
+#VSLIDE
+### Constrained Labeling Index
+
+#VSLIDE
+2 label sets for each vertex:
+- B_in(v): a path from another vertex in G to v
+- B_out(v): a path from v to another vertex in G
+obtained by **2-hop labeling**
+
+#VSLIDE
+To **reduce memory consumption**, in each entry we can **substitute a full path with a tuple**<br>
+**(last vertex, cost,length, second-to-last vertex)**<br>
+index is created through iterations
+
+#VSLIDE
+![idea](index.jpg)
+
+
+#VSLIDE
+![idea](idea.jpg)
+<br>
+with the COLA index we do not need to search for the α-
+CSP result, but **combine pre-computed paths in the
+label** sets to form a result
+
+#VSLIDE
+### Query processing
+**build** B_out(s) and Bin(t) **during query time**, using the COLA index as well as
+subgraphs G(s), G(t) ∈ Partition<br>
+Bout(s) and Bin(t) must satisfy that the α-CSP result can be obtained by concatenating a path from B_out(s) and another from B_in(t)
+
+#VSLIDE
+**several nested-loop join operations**, which can be rather **expensive for large label / skyline sets** <br>
+#### Call for optimizations
+
+#VSLIDE
+![idea](label_join.png)
+
+#VSLIDE
+**&alpha;-Dijk** is used for:
+1. for intra-partition search during query processing in COLA
+2. for building the COLA index
+3. as a standalone index-free solution for α-CSP
+
+#VSLIDE
+![idea](idea.jpg)
+<br>
+α-Dijk **concentrates the pruning power to vertices associated with a large number of paths**, and does not allocate pruning power at all to vertices with relatively few paths.
+<br>In a real road network, there are usually **a small number of landmark
+vertices that appear frequently in CSPs**: concentrating the pruning power
+to such vertices leads to **effective reduction of the total number of
+paths to be examined**, and thus, **accelerates query processing**.
+
+#VSLIDE
+![idea](a_dijk.png)
+
+
 
 #HSLIDE
 # How much ?
