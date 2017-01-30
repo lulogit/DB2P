@@ -334,3 +334,242 @@ paths to be examined**
 ![datasets](alpha.png)
 - better results with &alpha; >> (prune more paths)
 - low sensitivity in query time to &alpha;
+
+
+#HSLIDE
+### DOCS: Domain-Aware Crowdsourcing System
+
+#HSLIDE
+# Who ?
+
+#VSLIDE
+- Yudian Zheng
+  (Department of Computer Science, The University of Hong Kong)
+- Guoliang Li
+  (Department of Computer Science, Tsinghua University)
+- Reynold Cheng
+  (Department of Computer Science, The University of Hong Kong)
+
+#HSLIDE
+# What ?
+
+#VSLIDE
+## Crowd Sourcing (CS)
+**Human effort** to solve **computer-hard problems**:
+- photo tagging
+- entity resolution
+- sentiment analysis
+
+#VSLIDE
+## CS platforms
+- Amazon Mechanical Turk (500K workers, 190 countries)
+- Crowd Flower
+<br>Assign tasks to workers
+
+#VSLIDE
+## CS open challenges
+- Model the quality of a user w.r.t. a task
+- Assess the quality of worker's answers
+- Efficiently assign tasks to workers
+
+#VSLIDE
+## DOCS
+[**DO**main aware **C**rowd sourcing **S**ystem]
+A 360° system that face all these challenges
+
+#VSLIDE
+![idea](idea.jpg)
+<br>
+ **Tasks are relative to a knowledge domain**
+
+#VSLIDE
+![idea](idea.jpg)
+<br>
+Workers are **experts in certain domains**
+
+#VSLIDE
+![idea](idea.jpg)
+<br>
+ **Domains can be detected** exploiting existing knowledge bases (**KB**):
+- Wikipedia
+- Freebase (57M concepts)
+- YahooAnswer (categories)
+
+#VSLIDE
+### DOCS modules:
+- Domain Vector Estimation (**DVE**)
+  analyze domain of a task w.r.t. a KB
+- Truth inference (**TI**)
+  infer truth value of a task result based on domain-sensitive worker model
+- Online Task Assignment (**OTA**)
+  efficiently assign tasks to workers to consume budget in the most profitable way
+
+#VSLIDE
+![results](fantozzi.jpg)
+<br>
+## Released on AMT
+Proved to beat state of the art solutions in term of **result accurancy**
+
+#HSLIDE
+# Why ?
+
+#VSLIDE
+## How to infer high quality results from CS tasks ?
+
+#VSLIDE
+1. Worker model
+2. Truth inference
+3. Task assignment
+
+#HSLIDE
+# State of art
+
+#VSLIDE
+### 1. Worker model
+Worker **accurancy** represented as **real value** or matrix of real value, <br>
+based on **previous results** in tasks
+
+#VSLIDE
+![results](wrong.png)<br>
+Workers **perform differently w.r.t. different domain** of tasks<br>
+**No absolutely good or bad workers**, but workers that **fit a task**
+
+#VSLIDE
+### Some works take domain into consideration
+
+#VSLIDE
+#### rely on textual description of task (textual similarity)
+- *Is Andrea Agassi a tennis player ?*
+  not similar to
+  *How many Wimbledon tournments have been played ?*
+- *Compare the height of Andrea Agassi and Serena Williams ?*
+  similar to
+  *Compare the height of Everest and K2 ?*
+
+#VSLIDE
+#### applying machine learning for latent domain extraction
+not accurate as difficult to interpret
+
+#VSLIDE
+### 2. Truth inference
+Should aggregate workers' results
+
+#VSLIDE
+### Latent domain extraction through machine learning
+Fail to accurately weight the domain experience due to ambiguity in the model
+
+#VSLIDE
+### Weightened majority voting
+can mislead cause expertise is not taken into consideration
+
+#VSLIDE
+### 3. Task assignment
+**Latency is crucial** for on line platforms<br>
+state of the art offer simple solutions
+
+#VSLIDE
+![results](wrong.png)<br>
+Poor assignment will:
+- cut the budget
+- reduce results quality
+
+#VSLIDE
+- task difficulty not taken into consideration
+- assign every task to an equal number of workers
+- always select best worker
+  (non regarding on already collected results on that task)
+
+#HSLIDE
+# How ?
+
+#VSLIDE
+### DOCS
+- DVE
+- TI
+- OTA
+
+#VSLIDE
+#### DVE
+1. task text representation
+2. entity-linking algorithm
+    (extract entities)
+3. domain vector
+  (how likely task belong to each domain ?)
+
+
+#VSLIDE
+#### challenge
+**Ambiguities** in entity lead to **exponential possibilities** of domain association
+<br> eg: *Micheael Jordan is actor or sports man or ...*
+
+#VSLIDE
+### 2-step alg:
+1. extract entities, concepts, indicator vector
+2. computing domain vector
+<br>O(|Et|^3)
+
+#VSLIDE
+### implementation:
+- 26 domains from YahooAnswer topics
+- wikifier (opensource entity-linking tool)
+- concepts from Freebase API
+
+#VSLIDE
+#### Observation
+- task are then published on AMT
+- DOCS must respond to *workers' requests* for:
+  - the assignment of a task (**ask new task**)
+  - answer submission of a task (**task completed**)
+
+#VSLIDE
+#### TI
+1. insert answer into DB
+2. infer task's truth
+
+#VSLIDE
+![idea](idea.jpg)
+<br>
+- result is trusted if worker is expert in the domain
+- worker is expert in a domain if correctly answer the tasks of that domain
+- iterative approach to estimate those parameters
+
+#VSLIDE
+#### challenge
+**mantain worker's quality in the long run**
+- incremental inference algorithm policies
+
+#VSLIDE
+### implementation:
+- delayed iterative alg. every 100 results
+- incremental alg. for speed
+
+#VSLIDE
+Save in DB:
+quality, number of task (forall workers, forall domains)
+
+#VSLIDE
+#### OTA
+1. estimate benefit of a task assignment to an user
+  (if user will answer that task)
+2. assign k tasks to user to maximize benefit
+
+#VSLIDE
+#### challenge
+Alg. that **computes optimal k-tasks assignment in linear time**<br>
+(n,k) possible assignments --> exponential
+
+#VSLIDE
+- golden tasks assigned to new workers
+- k-tasks assigned to other workers
+
+#VSLIDE
+- K=1 assignment tend to decrease entropy (ambiguity) in solution
+- K=n assigment is the sum of single K=1 assignment (pick-alg.)
+
+#VSLIDE
+### Golden tasks
+- should fit a specific domain
+- distribution of GT should follow the distribution of aggregated Domain vectors
+
+#HSLIDE
+# Questions ?
