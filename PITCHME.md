@@ -263,7 +263,7 @@ To **reduce memory consumption**, in each entry we can **substitute a full path 
 index is created through iterations
 
 #VSLIDE
-![idea](index.jpg)
+![idea](index.png)
 
 
 #VSLIDE
@@ -295,11 +295,11 @@ Bout(s) and Bin(t) must satisfy that the α-CSP result can be obtained by concat
 #VSLIDE
 ![idea](idea.jpg)
 <br>
-α-Dijk **concentrates the pruning power to vertices associated with a large number of paths**, and does not allocate pruning power at all to vertices with relatively few paths.
+α-Dijk **concentrates the pruning power to vertices associated with a large number of paths**
 <br>In a real road network, there are usually **a small number of landmark
 vertices that appear frequently in CSPs**: concentrating the pruning power
 to such vertices leads to **effective reduction of the total number of
-paths to be examined**, and thus, **accelerates query processing**.
+paths to be examined**
 
 #VSLIDE
 ![idea](a_dijk.png)
